@@ -1,4 +1,4 @@
-## Technologies Used:
+## COVID-19 Live Cases Tracker
 
 - [ ] ES6 moudles import/export
 - [ ] Let/Const
