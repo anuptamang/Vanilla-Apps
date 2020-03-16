@@ -2,7 +2,7 @@
 
 ## Projects:
 
-1. Form Validator
+1. [Form Validator](https://anuptamang.github.io/Vanilla-Apps/1-form-validator/)
 2. Exchange Rate Calculator
 3. COVID-19 Tracker
 
