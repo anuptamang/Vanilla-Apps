@@ -1,4 +1,4 @@
-## Technologies Used:
+## Client Side Form Validator.
 
 - [ ] ES6 moudles import/export
 - [ ] Let/Const

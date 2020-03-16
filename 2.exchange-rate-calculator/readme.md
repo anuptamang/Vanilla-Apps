@@ -1,4 +1,4 @@
-## Technologies Used:
+## International Exchange Rate Calculator
 
 - [ ] ES6 moudles import/export
 - [ ] Let/Const
