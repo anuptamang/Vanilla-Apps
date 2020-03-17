@@ -1,4 +1,4 @@
-## COVID-19 Live Cases Tracker
+## COVID-19 Live Case Tracker
 
 - [ ] ES6 moudles import/export
 - [ ] Let/Const

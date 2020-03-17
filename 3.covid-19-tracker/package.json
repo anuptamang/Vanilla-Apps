@@ -1,0 +1,47 @@
+{
+  "name": "webpack-babel-starter",
+  "version": "1.0.0",
+  "description": "This is the webpack babel starter",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuptamang/webpack-babel-starter.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-starter",
+    "webpack-dev-server",
+    "babel",
+    "babel-env"
+  ],
+  "author": "Anup Tamang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anuptamang/webpack-babel-starter/issues"
+  },
+  "homepage": "https://github.com/anuptamang/webpack-babel-starter#readme",
+  "devDependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.0.0",
+    "es6-promise": "^4.2.8",
+    "isomorphic-fetch": "^2.2.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
