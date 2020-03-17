@@ -7,4 +7,4 @@
 - [ ] Fetch API
 - [ ] Promises
 
-#### Live Demo: https://anuptamang.github.io/Vanilla-Apps/3.covid-19-tracker/
+#### Live Demo: https://anuptamang.github.io/Vanilla-Apps/3.covid-19-tracker/src/
