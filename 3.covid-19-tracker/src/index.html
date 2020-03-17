@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./build/app.bundle.css">
-    <title>COVID-19 Live Cases Tracker</title>
-  </head>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="container text-center pb-5">
-      <div class="d-flex align-items-center" style="height: 100vh">
-        <div class="w-100 text-center text-info">
-          <h1>Webpack / Babel up and running.......</h1>
-          <p>Happy Coding !!</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./build/app.bundle.css">
+  <title>COVID-19 Live Cases Tracker</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="container text-center py-5">
+    <div class="d-flex align-items-center">
+      <div class="w-100 text-center text-info">
+        <div class="text-center mb-5">
+          <div class="img-holder mb-3"><img src="./images/covid.png" alt="" srcset=""></div>
+          <h1><strong>COVID-19</strong></h1>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-4">
+            <h1>Total Coronavirus Cases:</h1>
+            <div class="display-1 all-cases"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Deaths:</h2>
+            <div class="display-2 all-deaths"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Recovered:</h2>
+            <div class="display-2 all-recovered"></div>
+          </div>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-4">
+            <h1>Nepal Coronavirus Cases:</h1>
+            <div class="display-1 nepal-cases"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Deaths:</h2>
+            <div class="display-2 nepal-deaths"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Recovered:</h2>
+            <div class="display-2 nepal-recovered"></div>
+          </div>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-md-4">
+            <h1>Germany Coronavirus Cases:</h1>
+            <div class="display-1 de-cases"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Deaths:</h2>
+            <div class="display-2 de-deaths"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Total Recovered:</h2>
+            <div class="display-2 de-recovered"></div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
-  <script src="./build/app.bundle.js"></script>
+  </div>
+</body>
+<script src="./build/app.bundle.js"></script>
+
 </html>
