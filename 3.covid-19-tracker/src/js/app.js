@@ -1,5 +1,8 @@
 //import dependency to work async/await/ promises/ fetch in IE
 import "isomorphic-fetch";
+// import './components/GoogleChartPlugin.js';
+// import './components/GoogleChart.js';
+
 import '../scss/main.scss';
 
 const allCases = selector('.all-cases');
@@ -10,9 +13,9 @@ const nepalCases = selector('.nepal-cases');
 const nepalDeaths = selector('.nepal-deaths');
 const nepalRecovered = selector('.nepal-recovered');
 
-const deCases = selector('.de-cases');
-const deDeaths = selector('.de-deaths');
-const deRecovered = selector('.de-recovered');
+const uaCases = selector('.ua-cases');
+const uaDeaths = selector('.ua-deaths');
+const uaRecovered = selector('.ua-recovered');
 
 async function getData(url) {
     let response = await fetch(url);
@@ -34,11 +37,11 @@ getData(`https://corona.lmao.ninja/countries/Nepal`)
         showAllCases(data.recovered, nepalRecovered);
     });
 
-getData(`https://corona.lmao.ninja/countries/Germany`)
+getData(`https://corona.lmao.ninja/countries/Ukraine`)
     .then(data => {
-        showAllCases(data.cases, deCases);
-        showAllCases(data.deaths, deDeaths);
-        showAllCases(data.recovered, deRecovered);
+        showAllCases(data.cases, uaCases);
+        showAllCases(data.deaths, uaDeaths);
+        showAllCases(data.recovered, uaRecovered);
     });
 
 function showAllCases(data, element) {
