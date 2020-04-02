@@ -1,4 +1,4 @@
-# The apss in this repo are created with Vanilla JS.
+# The apps in this repo are created with Vanilla JS.
 
 ## Projects:
 
