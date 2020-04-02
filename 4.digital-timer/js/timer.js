@@ -3,9 +3,11 @@ class Timer {
     this.durationInput = durationInput;
     this.startButton = startButton;
     this.pauseButton = pauseButton;
+    this.isTimerRunning = false;
     if (callbacks) {
       this.onStart = callbacks.onStart;
       this.onTick = callbacks.onTick;
+      this.onPause = callbacks.onPause;
       this.onComplete = callbacks.onComplete;
     }
 
@@ -14,15 +16,19 @@ class Timer {
   }
 
   start = () => {
-    if (this.onStart) {
-      this.onStart(this.timeRemaining);
+    if (!this.isTimerRunning) {
+      if (this.onStart) {
+        this.onStart(this.timeRemaining);
+      }
+      this.tick();
+      this.timerId = setInterval(this.tick, 20);
     }
 
-    this.tick();
-    this.timerId = setInterval(this.tick, 20);
+    return this.isTimerRunning = true;
   }
 
   tick = () => {
+
     if (parseFloat(this.timeRemaining) <= 0) {
       this.pause();
       if (this.onComplete) {
@@ -37,7 +43,14 @@ class Timer {
   }
 
   pause = () => {
-    clearInterval(this.timerId);
+    if (this.isTimerRunning) {
+      clearInterval(this.timerId);
+      if (this.onPause) {
+        this.onPause();
+      }
+    }
+
+    return this.isTimerRunning = false;
   }
 
   get timeRemaining() {
