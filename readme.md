@@ -1,4 +1,4 @@
-# The apps in this repo are created with Vanilla JS.
+# The apps are created with Vanilla JS.
 
 ## Projects:
 
