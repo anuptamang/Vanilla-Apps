@@ -4,6 +4,8 @@
 - [ ] Arrow Functions
 - [ ] Axios
 - [ ] Async/Await
+- [ ] Destructure
+- [ ] Spread
 - [ ] Rest Parameters
 - [ ] Debounce Function
 
