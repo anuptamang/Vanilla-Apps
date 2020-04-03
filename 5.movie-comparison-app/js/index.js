@@ -1,4 +1,4 @@
-const url = 'http://www.omdbapi.com/';
+const url = 'https://www.omdbapi.com/';
 
 const fetchData = async (searchTerm) => {
   const response = await axios.get(url, {
