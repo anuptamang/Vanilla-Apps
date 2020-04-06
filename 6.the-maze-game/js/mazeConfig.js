@@ -1,0 +1,15 @@
+const mazeConfig = {
+  mazeWrapper: document.querySelector('#wrapper'),
+  wireframesShow: false,
+  gravityY: 0,
+  wallSize: 20,
+  cellsHorizontal: 10,
+  cellsVertical: 7,
+  velocity: 5,
+  successMsgHolder: document.querySelector('.winner'),
+  hideClass: 'hidden',
+  wallsColor: 'brown',
+  mazeWallsColor: 'brown',
+  ballColor: 'lightgreen',
+  goalColor: 'lightgreen',
+};
