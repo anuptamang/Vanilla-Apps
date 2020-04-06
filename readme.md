@@ -7,6 +7,7 @@
 3. [COVID-19 Tracker](https://anuptamang.github.io/Vanilla-Apps/3.covid-19-tracker/src)
 4. [Digital Timer](https://anuptamang.github.io/Vanilla-Apps/4.digital-timer)
 5. [Movie Comparison App](https://anuptamang.github.io/Vanilla-Apps/5.movie-comparison-app)
+6. [The Maze Game](https://anuptamang.github.io/Vanilla-Apps/6.the-maze-game/)
 
 ### Technologies Used:
 
@@ -17,6 +18,13 @@
 - [ ] Arrow Functions
 - [ ] Callbacks
 - [ ] Destructure
+- [ ] Spread
+- [ ] Rest Parameter
 - [ ] Fetch API
 - [ ] Promises
 - [ ] Async/Await
+- [ ] Debounce Function
+- [ ] Axios
+- [ ] SVG Animation
+- [ ] Canvas
+- [ ] Matter.js
