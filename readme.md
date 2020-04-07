@@ -8,6 +8,7 @@
 4. [Digital Timer](https://anuptamang.github.io/Vanilla-Apps/4.digital-timer)
 5. [Movie Comparison App](https://anuptamang.github.io/Vanilla-Apps/5.movie-comparison-app)
 6. [The Maze Game](https://anuptamang.github.io/Vanilla-Apps/6.the-maze-game/)
+7. [The Message Sharing App](https://anuptamang.github.io/Vanilla-Apps/7.message-sharing-app/)
 
 ### Technologies Used:
 
@@ -28,3 +29,5 @@
 - [ ] SVG Animation
 - [ ] Canvas
 - [ ] Matter.js
+- [ ] ASCII||Binary Encryption
+- [ ] Hash
