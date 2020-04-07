@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Sharing App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .row {
+      padding-top: 25vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s8 offset-s2">
+      <div id="message-form" class="card-panel">
+        <form action="#">
+          <label>Enter a Secret Message</label>
+          <input id="message-input" type="text" />
+          <button class="btn">Create</button>
+        </form>
+      </div>
+      <div id="link-form" class="card-panel hide">
+        Share this link with a friend
+        <input id="link-input" type="text" />
+      </div>
+      <div id="secret-msg" class="card-panel hide">
+        <h1></h1>
+        <div class="">
+          <a href="./index.html">Create your own secret message!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
