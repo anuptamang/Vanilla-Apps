@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser'); // Middleware
 const cookieSession = require('cookie-session');
 const authRouter = require('./routes/admin/auth');
-const productsRouter = require('./routes/admin/products');
+const adminProductsRouter = require('./routes/admin/products');
+const productsRouter = require('./routes/products');
+const cartsRouter = require('./routes/carts');
 
 const app = express();
 
@@ -16,6 +18,8 @@ app.use(
 
 app.use(authRouter);
 app.use(productsRouter);
+app.use(adminProductsRouter);
+app.use(cartsRouter);
 
 app.listen(5055, () => {
   console.log('App listening on port 5055!');
