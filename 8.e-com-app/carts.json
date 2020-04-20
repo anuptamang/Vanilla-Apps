@@ -4,7 +4,12 @@
     "id": "1954e9ae"
   },
   {
-    "items": [],
+    "items": [
+      {
+        "id": "ac3d7258",
+        "quantity": 1
+      }
+    ],
     "id": "ebe9c5a9"
   }
 ]
