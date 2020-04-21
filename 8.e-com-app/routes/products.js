@@ -8,14 +8,14 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const id = req.session.userId;
-  let fname;
+  let userName;
   if (id) {
     const user = await usersRepo.getOneBy({ id });
 
-    fname = user.fname;
+    userName = user.fname;
   }
   const products = await productsRepo.getAll();
-  res.send(productsIndexTemplate({ fname, products }));
+  res.send(productsIndexTemplate({ userName, products }));
 });
 
 module.exports = router;

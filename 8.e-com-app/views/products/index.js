@@ -2,8 +2,8 @@ const header = require('../layouts/header');
 const banner = require('../layouts/banner');
 const footer = require('../layouts/footer');
 
-module.exports = ({ fname, products }) => {
-  const headerBlock = header(fname);
+module.exports = ({ userName, products }) => {
+  const headerBlock = header(userName);
   const bannerBlock = banner();
   const footerBlock = footer();
 

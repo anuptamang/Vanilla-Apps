@@ -1,8 +1,8 @@
-module.exports = (username) => {
+module.exports = (userName) => {
   let userPanel;
-  if (username) {
+  if (userName) {
     userPanel = `
-      <li><a href="/admin/products/">Hello, ${username}</a></li>
+      <li><a href="/admin/products/">Hello, ${userName}</a></li>
       <li><a href="/signout/">Logout</a></li>
     `;
   } else {
