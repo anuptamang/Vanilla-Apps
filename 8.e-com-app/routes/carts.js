@@ -3,6 +3,8 @@ const cartsRepo = require('../repositories/carts');
 const productsRepo = require('../repositories/products');
 const cartShowTemplate = require('../views/carts/show');
 
+const usersRepo = require('../repositories/users');
+
 const router = express.Router();
 
 // Receive a post request to add an item to a cart
@@ -19,8 +21,6 @@ router.post('/cart/products', async (req, res) => {
     // we have a cart! lets get it from the repo
     cart = await cartsRepo.getOne(req.session.cartId);
   }
-
-  console.log(cart);
 
   // Either increment quanity for existing product or add new product
   const existingItem = cart.items.find(
@@ -43,6 +43,14 @@ router.post('/cart/products', async (req, res) => {
 
 // Receive a GET request to show all items in cart
 router.get('/cart', async (req, res) => {
+  const id = req.session.userId;
+  let fname;
+  if (id) {
+    const user = await usersRepo.getOneBy({ id });
+
+    fname = user.fname;
+  }
+
   if (!req.session.cartId) {
     return res.redirect('/');
   }
@@ -54,7 +62,7 @@ router.get('/cart', async (req, res) => {
     item.product = product;
   }
 
-  res.send(cartShowTemplate({ items: cart.items }));
+  res.send(cartShowTemplate({ fname, items: cart.items }));
 });
 
 // Receive a post request to delete an item from a cart

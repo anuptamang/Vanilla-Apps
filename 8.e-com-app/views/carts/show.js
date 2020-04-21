@@ -1,6 +1,9 @@
-const layout = require('../layout');
+const header = require('../layouts/header');
+const footer = require('../layouts/footer');
 
-module.exports = ({ items }) => {
+module.exports = ({ fname, items }) => {
+  const headerBlock = header(fname);
+  const footerBlock = footer();
   // let totalPrice = 0;
   // for (let item of items) {
   //   totalPrice += item.quantity * item.product.price;
@@ -38,8 +41,8 @@ module.exports = ({ items }) => {
     })
     .join('');
 
-  return layout({
-    content: `
+  return `
+     ${headerBlock}
       <div id="cart" class="container">
         <div class="columns">
           <div class="column"></div>
@@ -59,6 +62,5 @@ module.exports = ({ items }) => {
           <div class="column"></div>
         </div>
       </div>
-    `,
-  });
+    `;
 };

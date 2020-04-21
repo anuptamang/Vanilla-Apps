@@ -1,6 +1,12 @@
-const layout = require('../layout');
+const header = require('../layouts/header');
+const banner = require('../layouts/banner');
+const footer = require('../layouts/footer');
 
-module.exports = ({ products }) => {
+module.exports = ({ fname, products }) => {
+  const headerBlock = header(fname);
+  const bannerBlock = banner();
+  const footerBlock = footer();
+
   const renderedProducts = products
     .map((product) => {
       return `
@@ -27,16 +33,9 @@ module.exports = ({ products }) => {
     })
     .join('\n');
 
-  return layout({
-    content: `
-      <section class="banner">
-        <div class="container">
-          <div class="columns is-centered">
-            <img src="/images/banner.jpg" />
-          </div>
-        </div>
-      </section>
-      
+  return `
+      ${headerBlock}
+      ${bannerBlock}      
       <section>
         <div class="container">
           <div class="columns">
@@ -53,6 +52,6 @@ module.exports = ({ products }) => {
           </div>
         </div>
       </section>
-    `,
-  });
+      ${footerBlock}
+    `;
 };

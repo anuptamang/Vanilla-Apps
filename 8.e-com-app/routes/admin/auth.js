@@ -24,10 +24,10 @@ router.post(
   [requireEmail, requirePassword, requirePasswordConfirmation],
   handleErrors(signupTemplate),
   async (req, res) => {
-    const { email, password } = req.body;
+    const { fname, email, password } = req.body;
 
     // Create a user in our user repo to represent this person
-    const user = await usersRepo.create({ email, password });
+    const user = await usersRepo.create({ fname, email, password });
     // Store the id of that user inside the users cookie
     req.session.userId = user.id;
 
@@ -37,7 +37,7 @@ router.post(
 
 router.get('/signout', (req, res) => {
   req.session = null;
-  res.send('You are logged out!');
+  res.redirect('/');
 });
 
 router.get('/signin', (req, res) => {
@@ -53,7 +53,7 @@ router.post(
     const user = await usersRepo.getOneBy({ email });
 
     req.session.userId = user.id;
-    res.redirect('admin/products');
+    res.redirect('/admin/products');
   }
 );
 

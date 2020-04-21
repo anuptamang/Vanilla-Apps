@@ -1,4 +1,16 @@
-module.exports = ({ content }) => {
+module.exports = (username) => {
+  let userPanel;
+  if (username) {
+    userPanel = `
+      <li><a href="/admin/products/">Hello, ${username}</a></li>
+      <li><a href="/signout/">Logout</a></li>
+    `;
+  } else {
+    userPanel = `
+      <li><a href="/signin/">Login</a></li>
+      <li><a href="/signup/">Signup</a></li>
+    `;
+  }
   return `
     <!DOCTYPE html>
       <html lang="en">
@@ -28,11 +40,9 @@ module.exports = ({ content }) => {
               </div>
               <div>
                 <ul class="social">
+                 ${userPanel}
                   <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
                   <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href=""><i class="fab fa-dribbble"></i></a></li>
-                  <li><a href=""><i class="fab fa-google-plus"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -57,9 +67,5 @@ module.exports = ({ content }) => {
             </div>
           </nav>
         </header>
-
-        ${content}
-      </body>
-    </html>
   `;
 };
