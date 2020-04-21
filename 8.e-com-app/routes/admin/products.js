@@ -37,16 +37,6 @@ router.post(
     await productsRepo.create({ title, price, image });
 
     res.redirect('/admin/products');
-
-    // if (req.file) {
-    //   const image = req.file.buffer.toString('base64');
-    //   const { title, price } = req.body;
-    //   await productsRepo.create({ title, price, image });
-
-    //   res.redirect('/admin/products');
-    // } else {
-    //   res.send(productsNewTemplate({}));
-    // }
   }
 );
 
