@@ -26,7 +26,8 @@ module.exports = ({ product, errors }) => {
             </div>
             
             <div class="field">
-              <label class="label">Image</label>            
+              <label class="label">Image</label>
+              <img src="data:image/png;base64, ${product.image}"/>       
               <input type="file" name="image" />
             </div>
             <br />

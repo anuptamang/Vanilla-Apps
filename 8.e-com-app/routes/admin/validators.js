@@ -11,6 +11,7 @@ module.exports = {
     .toFloat()
     .isFloat({ min: 1 })
     .withMessage('Must be a number greater than 1'),
+  requireImage: check('image').notEmpty().withMessage('Image must be uploaded'),
   requireEmail: check('email')
     .trim()
     .normalizeEmail()
