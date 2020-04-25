@@ -9,6 +9,7 @@
 5. [Movie Comparison App](https://anuptamang.github.io/Vanilla-Apps/5.movie-comparison-app)
 6. [The Maze Game](https://anuptamang.github.io/Vanilla-Apps/6.the-maze-game/)
 7. [The Message Sharing App](https://anuptamang.github.io/Vanilla-Apps/7.message-sharing-app/)
+8. [The E-Com App](http://akt-ecom.herokuapp.com/)
 
 ### Technologies Used:
 
@@ -31,3 +32,5 @@
 - [ ] Matter.js
 - [ ] ASCII||Binary Encryption
 - [ ] Hash
+- [ ] NodeJs
+- [ ] Express.JS
